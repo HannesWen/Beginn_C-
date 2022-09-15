@@ -10,21 +10,13 @@ namespace Beginning_C_Sharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Wie alt bist du?");
-            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Gib mir ein Wort!");
+            string entry = Console.ReadLine();
 
-            if (age >= 28)
-            {
-                Console.WriteLine("Viel Spaß!");
-            }
-            else if (age >= 18)
-            {
-                Console.WriteLine("Zeig mir mal deinen Ausweis");
-            }
-            else
-            {
-                Console.WriteLine("Du bist zu jung, Frischling");
-            }
+            string replaced_entry = entry.Replace("U", "G").Replace("u", "g");
+
+            Console.WriteLine("Der alte Text war " + entry);
+            Console.WriteLine("Der neue Test ist " + replaced_entry);
 
             Console.ReadLine();
         }
