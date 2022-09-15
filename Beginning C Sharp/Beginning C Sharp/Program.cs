@@ -13,10 +13,10 @@ namespace Beginning_C_Sharp
             Console.WriteLine("Gib mir ein Wort!");
             string entry = Console.ReadLine();
 
-            string replaced_entry = entry.Replace("U", "G").Replace("u", "g");
+            string trimmed_entry = entry.Trim(' ', 'a');
 
-            Console.WriteLine("Der alte Text war " + entry);
-            Console.WriteLine("Der neue Test ist " + replaced_entry);
+            Console.WriteLine("Old String " + entry + ":");
+            Console.WriteLine("New String " + trimmed_entry + ":");
 
             Console.ReadLine();
         }
