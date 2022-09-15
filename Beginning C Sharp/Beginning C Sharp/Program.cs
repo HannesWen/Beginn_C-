@@ -10,15 +10,18 @@ namespace Beginning_C_Sharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Gib mir ein Wort!");
-            string entry = Console.ReadLine();
+            for(int i = 0; i< 10; i++)
+            {
+                Console.WriteLine(i);
+            }
 
-            string trimmed_entry = entry.Substring(3, 4);
-
-            Console.WriteLine("Old String " + entry);
-            Console.WriteLine("New String " + trimmed_entry);
 
             Console.ReadLine();
         }
+
+
+
+
+
     }
 }
