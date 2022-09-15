@@ -13,14 +13,19 @@ namespace Beginning_C_Sharp
             Console.WriteLine("Wie alt bist du?");
             int age = Convert.ToInt32(Console.ReadLine());
 
-            if (age < 18)
-            {
-                Console.WriteLine("Du kommscht hier net rein!");
-            }
-            else
+            if (age >= 28)
             {
                 Console.WriteLine("Viel Spaß!");
             }
+            else if (age >= 18)
+            {
+                Console.WriteLine("Zeig mir mal deinen Ausweis");
+            }
+            else
+            {
+                Console.WriteLine("Du bist zu jung, Frischling");
+            }
+
             Console.ReadLine();
         }
     }
