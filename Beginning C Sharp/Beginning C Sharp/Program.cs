@@ -10,9 +10,11 @@ namespace Beginning_C_Sharp
     {
         static void Main(string[] args)
         {
-            string userName = "Hannes";
+            Console.WriteLine("Wie heißt du ?");
+            string userName = Console.ReadLine();
             Console.WriteLine("Hello " + userName);
-            Console.ReadLine();
+
+# Console.ReadLine();
         }
     }
 }
